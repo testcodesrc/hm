@@ -5,8 +5,8 @@
 
 /* General Body Styles */
 body {
-    background-color: #FFFFFF; /* White background */
-    color: #000000; /* Black text */
+    background-color: #f5f5f5; /* Light grey background, common in Webflow templates */
+    color: #333333; /* Dark grey text */
     font-family: "Inter", sans-serif; /* Use Inter font */
     margin: 0;
     padding: 0;
@@ -23,9 +23,9 @@ body {
 }
 
 /* Header Styles */
-.header, .navbar, .nav-top, .nav-btm, .footer {
-    background-color: #FFFFFF;
-    color: #000000;
+.header {
+    background-color: #1a1a1a; /* Dark background for header */
+    color: #FFFFFF; /* White text */
 }
 
 .navbar {
@@ -40,7 +40,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #333333; /* Darker border for dark theme */
 }
 
 .nav-wrap {
@@ -54,7 +54,7 @@ body {
     font-size: 24px;
     font-weight: 700;
     margin: 0;
-    color: #000000;
+    color: #FFFFFF; /* White text for brand */
 }
 
 .nav-right {
@@ -70,7 +70,7 @@ body {
 }
 
 .nav-date {
-    color: #666666;
+    color: #cccccc; /* Lighter grey for date */
     font-size: 14px;
 }
 
@@ -81,17 +81,17 @@ body {
 }
 
 .header-search-input {
-    border: 1px solid #000000;
+    border: 1px solid #555555; /* Lighter border for dark background */
     border-radius: 5px;
     padding: 8px 10px;
-    color: #000000;
-    background-color: #FFFFFF;
+    color: #FFFFFF; /* White text for input */
+    background-color: #333333; /* Darker background for input */
     width: 150px;
     transition: width 0.3s ease;
 }
 
 .header-search-input::placeholder {
-    color: #666666;
+    color: #999999; /* Lighter placeholder text */
 }
 
 .header-search-input:focus {
@@ -115,12 +115,13 @@ body {
 .close-icon, .search-icon img {
     width: 20px;
     height: 20px;
+    filter: invert(1); /* Invert icon color for dark background */
 }
 
 .primary-btn {
-    background-color: transparent;
-    color: #000000;
-    border: 1px solid #000000;
+    background-color: #ff7a00; /* Orange accent color */
+    color: #FFFFFF;
+    border: 1px solid #ff7a00;
     padding: 10px 15px;
     border-radius: 5px;
     text-decoration: none;
@@ -129,20 +130,21 @@ body {
 }
 
 .primary-btn:hover {
-    background-color: #000000;
+    background-color: #e66c00; /* Slightly darker orange on hover */
     color: #FFFFFF;
 }
 
 .primary-btn.fill {
-    background-color: #000000;
+    background-color: #ff7a00;
     color: #FFFFFF;
 }
 
 .primary-btn.fill:hover {
-    background-color: #333333;
+    background-color: #e66c00;
 }
 
 .nav-btm {
+    background-color: #222222; /* Slightly lighter dark background for nav-btm */
     padding: 10px 0;
 }
 
@@ -158,7 +160,7 @@ body {
 }
 
 .nav-link {
-    color: #000000;
+    color: #FFFFFF; /* White text for nav links */
     text-decoration: none;
     font-weight: 500;
     padding: 5px 0;
@@ -166,7 +168,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #666666;
+    color: #ff7a00; /* Orange on hover */
 }
 
 .w-dyn-list {
@@ -198,7 +200,7 @@ body {
 .humburg-menu div {
     width: 100%;
     height: 3px;
-    background-color: #000000;
+    background-color: #FFFFFF; /* White lines for dark background */
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
 }
@@ -223,8 +225,8 @@ body {
     top: 100%; /* Below the nav-top */
     left: 0;
     width: 100%;
-    background-color: #FFFFFF; /* Match header background */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #222222; /* Match nav-btm background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     flex-direction: column;
     padding: 20px;
     box-sizing: border-box;
@@ -244,7 +246,7 @@ section {
 }
 
 .single-title, .section-title, .cta-title, .ad-title {
-    color: #000000;
+    color: #000000; /* Black for titles on light sections */
     font-size: 32px;
     font-weight: 700;
     margin: 0;
@@ -297,7 +299,7 @@ section {
 }
 
 .post-item, .news-item {
-    background-color: #FFFFFF;
+    background-color: #FFFFFF; /* White background for cards */
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
@@ -305,13 +307,13 @@ section {
 
 .post-link, .hero-news-link, .news-link-v2, .news-link-v3, .news-link-v4, .cn-link, .editor-news-link, .author-link-v2 {
     text-decoration: none;
-    color: #000000;
+    color: #333333; /* Dark grey for link text */
     display: block;
     height: 100%;
 }
 
 .post-img, .hero-news-img, .news-img-v2, .news-img-v3, .news-img-v4, .cn-img, .editors-news-img, .author-img-v2 {
-    background-color: #E0E0E0;
+    background-color: #e0e0e0; /* Light grey for image placeholders */
     overflow: hidden;
     border-radius: 8px 8px 0 0;
 }
@@ -334,7 +336,7 @@ section {
 .news-category {
     font-size: 12px;
     font-weight: 600;
-    color: #666666;
+    color: #ff7a00; /* Orange for category */
     margin-bottom: 5px;
     text-transform: uppercase;
 }
@@ -344,7 +346,7 @@ section {
     font-weight: 600;
     margin-top: 0;
     margin-bottom: 10px;
-    color: #000000;
+    color: #000000; /* Black for titles */
 }
 
 .hero-news-data {
@@ -353,7 +355,7 @@ section {
 
 .hero-news-text {
     font-size: 14px;
-    color: #333333;
+    color: #555555; /* Slightly lighter grey for body text */
     margin-bottom: 10px;
 }
 
@@ -362,13 +364,13 @@ section {
     align-items: center;
     gap: 5px;
     font-size: 12px;
-    color: #666666;
+    color: #888888; /* Lighter grey for dates and dividers */
 }
 
 .date-divider {
     width: 4px;
     height: 4px;
-    background-color: #666666;
+    background-color: #888888;
     border-radius: 50%;
 }
 
@@ -412,7 +414,7 @@ section {
 
 .news-subtext {
     font-size: 14px;
-    color: #333333;
+    color: #555555;
 }
 
 .news-list-v3 .news-link-v3 {
@@ -483,7 +485,7 @@ section {
 
 .fn-info {
     font-size: 14px;
-    color: #333333;
+    color: #555555;
     margin-bottom: 10px;
 }
 
@@ -533,7 +535,7 @@ section {
 
 .category-link-v2 {
     text-decoration: none;
-    color: #000000;
+    color: #333333;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -551,13 +553,14 @@ section {
 
 .category-text {
     font-size: 14px;
-    color: #333333;
+    color: #555555;
 }
 
 .category-icon {
     width: 50px;
     height: 50px;
     margin-top: 15px;
+    filter: invert(0.1); /* Slightly darken icons */
 }
 
 /* Authors Section */
@@ -572,7 +575,7 @@ section {
 
 .advertis {
     flex: 1;
-    background-color: #EEEEEE;
+    background-color: #EEEEEE; /* Light grey for ad banner */
     border-radius: 8px;
     padding: 20px;
     display: flex;
@@ -585,10 +588,11 @@ section {
 .ad-title {
     font-size: 24px;
     margin-bottom: 10px;
+    color: #000000;
 }
 
 .ad-data div {
-    color: #333333;
+    color: #555555;
     font-size: 14px;
 }
 
@@ -608,7 +612,7 @@ section {
     align-items: center;
     padding: 20px;
     text-decoration: none;
-    color: #000000;
+    color: #333333;
 }
 
 .author-img-v2 {
@@ -637,13 +641,13 @@ section {
 
 .author-text {
     font-size: 14px;
-    color: #333333;
+    color: #555555;
     margin-bottom: 15px;
 }
 
 /* CTA Section */
 .cta {
-    background-color: #F8F8F8; /* Light grey background for CTA */
+    background-color: #f0f0f0; /* Light grey background for CTA */
     padding: 80px 0;
     text-align: center;
 }
@@ -656,6 +660,7 @@ section {
 .cta-title {
     font-size: 36px;
     margin-bottom: 30px;
+    color: #000000;
 }
 
 .newsletter-field {
@@ -674,16 +679,16 @@ section {
 
 .newsletter-input .input {
     flex: 1;
-    border: 1px solid #000000;
+    border: 1px solid #cccccc; /* Lighter border for input */
     border-radius: 5px;
     padding: 12px 15px;
     font-size: 16px;
-    color: #000000;
+    color: #333333;
     background-color: #FFFFFF;
 }
 
 .newsletter-input .input::placeholder {
-    color: #666666;
+    color: #999999;
 }
 
 .newsletter-input .primary-btn {
@@ -696,11 +701,11 @@ section {
     align-items: center;
     gap: 8px;
     font-size: 14px;
-    color: #000000;
+    color: #333333;
 }
 
 .checkbox-field a {
-    color: #0000EE;
+    color: #007bff; /* Standard blue for links */
     text-decoration: underline;
 }
 
@@ -708,16 +713,24 @@ section {
     margin-top: 20px;
     padding: 15px;
     border-radius: 8px;
-    background-color: #f0f0f0;
-    color: #000000;
-    border: 1px solid #ccc;
+    background-color: #d4edda; /* Light green for success */
+    color: #155724; /* Dark green for success text */
+    border: 1px solid #c3e6cb;
     display: none; /* Hidden by default, shown by JS */
 }
+.error-message {
+    background-color: #f8d7da; /* Light red for error */
+    color: #721c24; /* Dark red for error text */
+    border: 1px solid #f5c6cb;
+}
+
 
 /* Footer */
 .footer {
+    background-color: #1a1a1a; /* Dark background for footer */
+    color: #FFFFFF; /* White text */
     padding: 60px 0 30px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #333333;
 }
 
 .footer-wrap {
@@ -729,7 +742,7 @@ section {
 .footer-brand h2 {
     font-size: 28px;
     font-weight: 700;
-    color: #000000;
+    color: #FFFFFF;
 }
 
 .footer-data {
@@ -745,34 +758,34 @@ section {
 }
 
 .footer-link {
-    color: #000000;
+    color: #FFFFFF; /* White text for footer links */
     text-decoration: none;
     font-size: 15px;
 }
 
 .footer-link:hover {
-    color: #666666;
+    color: #ff7a00; /* Orange on hover */
 }
 
 .address {
     font-size: 15px;
-    color: #333333;
+    color: #cccccc; /* Lighter grey for address */
     margin-bottom: 10px;
 }
 
 .footer-btm {
     margin-top: 40px;
     padding-top: 20px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #333333;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 14px;
-    color: #333333;
+    color: #cccccc; /* Lighter grey for copyright text */
 }
 
 .footer-btm-link {
-    color: #0000EE;
+    color: #007bff; /* Standard blue for links */
     text-decoration: underline;
 }
 
@@ -818,7 +831,7 @@ section {
     .nav-link {
         padding: 10px 0;
         width: 100%;
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid #555555; /* Darker border for mobile menu links */
     }
 
     .mobile-btn {
